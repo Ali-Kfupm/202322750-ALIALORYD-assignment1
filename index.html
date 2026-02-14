@@ -1,9 +1,220 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Page Title</title>
-  </head>
-  <body>
-    
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="css/styles.css" />
+      <script src="js/script.js" defer></script>
+      <title>Ali Aloryd portfolio</title>
+    </head>
+    <body>
+      <!-- The header for logo, and navbar in the webpage -->
+      <header>
+        <nav class="navbar">
+          <div class="logo"><a href="#"><img src="assets/images/logo.png" alt="logo"/></a></div>
+          <ul class="nav-links">
+            <li>
+              <!-- the span used to color the numbers-->
+              <a href="#about"><span class="nav-number">01.</span> About</a>
+            </li>
+            <li>
+              <a href="#projects"><span class="nav-number">02.</span> Projects</a>
+            </li>
+            <li>
+              <a href="#skills"><span class="nav-number">03.</span> Skills</a>
+            </li>
+            <li>
+              <a href="#contact"><span class="nav-number">04.</span> Contact</a>
+            </li>
+          </ul>
+          <!-- The resume is not yet done after I do it I will add it to the github and will work without any changes-->
+          <a href="assets/resume.pdf" class="resume-btn" target="_blank" rel="noopener">Resume</a>
+        </nav>
+      </header>
+      <main>
+        <!-- HERO --> 
+        <section id="hero" class="section hero">
+          <div class="container">
+            <p class="hero-intro">Hi, my name is</p>
+            <!-- The big text in the hero section -->
+            <h1 class="hero-title">Ali Aloryd.</h1>
+            <h2 class="hero-subtitle">I turn ideas into functional systems.</h2>
+            <!-- The phargraph in the hero section-->
+            <p class="hero-text">
+              Senior Software Engineering student at KFUPM and First-Honor Graduate in Computer Information Technology from DCC.
+              Passionate about building structured, maintainable web applications with clean UI architecture and purposeful JavaScript interactivity.
+            </p>
+            <!-- hero btns -->
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </section>
+      
+        <!-- ABOUT -->
+        <section id="about" class="section">
+          <div class="container">
+            <!-- Span for section number color-->
+            <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+            <!-- The paragraph has a brif descrption about me -->
+            <p>
+              I am a senior Software Engineering student at KFUPM with a strong interest in building structured and scalable systems. My focus is on writing clean, maintainable code and designing applications that are both functional and user-friendly.
+              <br/><br/><!-- Adding space bettwen the phargraph-->
+              Through academic and personal projects, I have worked on web systems, databases, and full-stack applications, applying core software engineering principles such as modular design, documentation, and system architecture.
+            </p>
+            <!-- bullet points list some of my interests -->
+            <ul class="bullets">
+              <li>Expanding skills in responsive design, backend integration, and database systems</li>
+              <li>Interested in full-stack development, system architecture, and software management</li>
+              <li>Driven to build real-world systems that are reliable and impactful</li>
+            </ul>
+          </div>
+        </section>
+      
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+          <div class="container">
+            <h2 class="section-title"><span class="section-number">02.</span> Projects</h2>
+            <div class="projects-grid">
+              <!-- card start -->
+              <article class="card">
+                <div class="card-image" aria-hidden="true">Project Preview</div>
+                <h3 class="card-title">EzPrint</h3>
+                <p class="card-text">
+                  A printing management system concept with roles, secure release workflow, and admin monitoring ideas.
+                </p>
+                <div class="tags">
+                  <span class="tag">UI</span><span class="tag">Requirements</span>
+                  <span class="tag">Backend</span><span class="tag">Frontend</span>
+                  <span class="tag">Embedded System</span><span class="tag">Network</span>
+                  <span class="tag">System design</span>
+                </div>
+                <div class="card-actions">
+                  <a class="link">In progress</a>
+                </div>
+              </article>
+              <!-- card end -->
+              <!-- card start -->
+              <article class="card">
+                <div class="card-image" aria-hidden="true"><img src="assets/images/KHARJAA.png" alt="KHARJAA project preview"></div>
+                <h3 class="card-title">KHARJAA</h3>
+                <p class="card-text">
+                  KHARJAA is a tourism platform that enables users to plan group trips, explore popular destinations in their area, 
+                  and join professionally organized camping experiences offered by verified trip providers.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span>
+                  <span class="tag">C#</span><span class="tag">ASP.NET</span>
+                  <span class="tag">SQL Server</span><span class="tag">API</span>
+                </div>
+                <div class="card-actions">
+                  <!-- The link not owrking yet because I did not upload the projects in github for now :)-->
+                  <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </article>
+              <!-- card end -->
+               <!-- card start -->
+              <article class="card">
+                <div class="card-image" aria-hidden="true"><img src="assets/images/QRCode.png" alt="KHARJAA project preview"></div>
+                <h3 class="card-title">QR Attendance</h3>
+                <p class="card-text">
+                  An attendance web system that allows instructors to generate a QR code for each class session and lets students scan it to automatically mark themselves as present. The faculty page manages courses, creates sessions, and tracks attendance.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                </div>
+                <div class="card-actions">
+                  <!-- same here :) will be added soon-->
+                  <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+                  <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </article>
+              <!-- card end -->
+               <!-- card start -->
+              <article class="card">
+                <div class="card-image" aria-hidden="true"><img src="assets/images/quiz-app.png" alt="Quiz App project preview"></div>
+                <h3 class="card-title">Quiz App</h3>
+                <p class="card-text">
+                  A mobile quiz application that allows users to create custom quizzes, share them with others, and track scores in real time. Users can attempt quizzes created by others and instantly view their results and performance analytics.
+                </p>
+                <div class="tags">
+                  <span class="tag">MAUI</span><span class="tag">C#</span>
+                  <span class="tag">SQLite</span>
+                </div>
+                <div class="card-actions">
+                  <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </article>
+              <!-- card end -->
+            </div>
+          </div>
+        </section>
+      
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+          <div class="container">
+            <h2 class="section-title"><span class="section-number">03.</span> Skills</h2>
+            <!-- Each div tag represents a skill -->
+            <div class="skills-grid">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Figma</div>
+              <div class="skill">Git/GitHub</div>
+              <div class="skill">SQL Database</div>
+              <div class="skill">NoSQL Database</div>
+              <div class="skill">C#</div>
+              <div class="skill">Java</div>
+              <div class="skill">Python</div>
+              <div class="skill">MAUI</div>
+              <div class="skill">ASP.NET</div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+          <div class="container">
+            <h2 class="section-title"><span class="section-number">04.</span> Contact</h2>
+            <p>Have a question or want to connect? Send me a message:</p>
+          
+            <form id="contactForm" class="contact-form">
+              <label>
+                Name
+                <input type="text" name="name" required placeholder="Your name" />
+              </label>
+            
+              <label>
+                Email
+                <input type="email" name="email" required placeholder="you@example.com" />
+              </label>
+            
+              <label>
+                Message
+                <textarea name="message" rows="5" required placeholder="Write your message..."></textarea>
+              </label>
+            
+              <button type="submit" class="btn primary">Send Message</button>
+              <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-content">
+          <p>© <span id="year"></span> Ali Aloryd. All rights reserved.</p>
+        
+          <a href="https://www.linkedin.com/in/alikamalaloryd21/"
+             target="_blank"
+             rel="noopener"
+             class="social-icon"
+             aria-label="LinkedIn Profile">
+        
+            <img src="assets/images/linkedin.png" alt="LinkedIn">
+            <span class="linkedin-name">alikamalaloryd21</span>
+          </a>
+        </div>
+      </footer>
+    </body>
+  </html>
